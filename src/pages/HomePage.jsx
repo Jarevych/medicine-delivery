@@ -1,7 +1,7 @@
 import { fetchStores } from 'api';
 import Products from 'components/ProductsComponent';
 import Stores from 'components/StoresComponent';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const HomePage = () => {
   const [storeList, setStoreList] = useState([]);
@@ -16,7 +16,7 @@ useEffect(() => {
     }
 },[])
   
-  const getAllStores = useCallback(async () => {
+  const getAllStores = (async () => {
     try {
       const data = await fetchStores();
       console.log(data);
@@ -35,7 +35,7 @@ useEffect(() => {
 
   useEffect(() => {
     getAllStores();
-  }, []);
+  }, );
 
   const HandleStoreSelect = storeId => {
     const selected = storeList.find(store => store.id === storeId);
