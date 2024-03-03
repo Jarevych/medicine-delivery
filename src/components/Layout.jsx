@@ -1,11 +1,11 @@
 import {Header} from './Header'
-
+import { LayoutStyled } from './LayoutStyled'
  const Layout = ({children}) => {
 return (
-    <div>
+    <LayoutStyled>
         <Header/>
         <main>{children}</main>
-    </div>
+    </LayoutStyled>
 )
 
 }

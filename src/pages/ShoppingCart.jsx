@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 // import { useLocation } from 'react-router-dom';
+import { ShoppingStyledContainer } from './ShoppingCartStyled';
+import Order from 'components/Order';
 
 const ShoppingCart = ({ added }) => {
   // console.log(products)
@@ -35,7 +37,8 @@ const ShoppingCart = ({ added }) => {
   };
 
   return (
-    <div>
+    <ShoppingStyledContainer>
+      <Order cart={cart}/>
       <ul>
         {cart.map(product => (
           <li key={product.id}>
@@ -51,7 +54,7 @@ const ShoppingCart = ({ added }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </ShoppingStyledContainer>
   );
 };
 

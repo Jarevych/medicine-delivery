@@ -1,9 +1,10 @@
 import React from 'react';
+import { StoresStyled } from './StoresComponentStylyd';
 
 const Stores = ({ stores, onSelect }) => {
     console.log(stores);
     return (
-        <div>
+        <StoresStyled>
             <ul>
                 {stores.map(store => (
                     <li key={store.id} onClick={() => onSelect(store.id)}>
@@ -11,7 +12,7 @@ const Stores = ({ stores, onSelect }) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </StoresStyled>
     );
 };
 
