@@ -1,6 +1,6 @@
 import { fetchStores } from 'api';
-import Products from 'components/ProductsComponent';
-import Stores from 'components/StoresComponent';
+import Products from '../components/ProductsComponent';
+import Stores from '../components/StoresComponent';
 import React, { useEffect, useState } from 'react';
 
 const HomePage = () => {
@@ -35,7 +35,7 @@ useEffect(() => {
 
   useEffect(() => {
     getAllStores();
-  }, );
+  },[] );
 
   const HandleStoreSelect = storeId => {
     const selected = storeList.find(store => store.id === storeId);
@@ -60,7 +60,7 @@ useEffect(() => {
   return (
     <div>
       <Stores stores={storeList} onSelect={HandleStoreSelect} />
-     {selectedStore && <Products products={productList} onClick={addToCart}/>}
+     {selectedStore && <Products medicines={productList} onClick={addToCart}/>}
     </div>
   );
 };
