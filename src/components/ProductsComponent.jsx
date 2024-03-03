@@ -4,7 +4,7 @@ import { ReactComponent as IconActive } from '../assets/favor-active.svg';
 import { ReactComponent as IconNormal } from '../assets/favor-normal.svg';
 
 const Products = ({ medicines, onClick, onAddToFavorites, favorites }) => {
-  const [products, setProducts] = useState([]);
+//   const [products, setProducts] = useState([]);
   const [favs, setFavs] = useState(favorites);
   const [sortedItems, setSortedItems] = useState([]);
 
@@ -13,7 +13,7 @@ const Products = ({ medicines, onClick, onAddToFavorites, favorites }) => {
   };
 
   const sortMedicine = medicines
-    .filter(product => isFavorite(product.id))
+    .filter(sortedItems => isFavorite(sortedItems.id))
     .concat(medicines.filter(product => !isFavorite(product.id)));
 
   console.log(sortMedicine);
@@ -26,7 +26,7 @@ const Products = ({ medicines, onClick, onAddToFavorites, favorites }) => {
     setFavs(favorites);
   }, [favorites]);
 
-  console.log(products);
+  console.log(sortedItems);
 
   const sortByPrice = () => {
     const sortedProducts = [...sortMedicine].sort((a, b) => a.price - b.price);

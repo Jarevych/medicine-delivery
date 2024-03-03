@@ -1,130 +1,658 @@
+[{
+  "id": 1,
+  "name": "Healthy Choice Pharmacy",
+  "address": {
+    "street": "123 Main Street",
+    "city": "London",
+    "postcode": "SW1A 1AA"
+  },
+  "medicines": [
+    {
+      "id": 1,
+      "name": "Aspirin",
+      "price": 5.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 2,
+      "name": "Ibuprofen",
+      "price": 6.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 3,
+      "name": "Paracetamol",
+      "price": 4.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 4,
+      "name": "Benadryl",
+      "price": 7.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 5,
+      "name": "Zyrtec",
+      "price": 8.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 6,
+      "name": "Claritin",
+      "price": 9.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 7,
+      "name": "Tylenol",
+      "price": 5.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 8,
+      "name": "Advil",
+      "price": 6.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 9,
+      "name": "Allegra",
+      "price": 7.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 10,
+      "name": "Robitussin",
+      "price": 8.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 11,
+      "name": "Mucinex",
+      "price": 9.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 12,
+      "name": "Zantac",
+      "price": 5.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 13,
+      "name": "Pepto-Bismol",
+      "price": 6.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 14,
+      "name": "Imodium",
+      "price": 7.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 15,
+      "name": "Gas-X",
+      "price": 8.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 16,
+      "name": "Tums",
+      "price": 9.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 17,
+      "name": "Excedrin",
+      "price": 5.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 18,
+      "name": "Dramamine",
+      "price": 6.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 19,
+      "name": "Sudafed",
+      "price": 7.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 20,
+      "name": "NyQuil",
+      "price": 8.49,
+      "dateAdded": "2024-03-15"
+    }
+  ]
+},
 {
-    "pharmacies": [
-      {
-        "name": "Pharmacy 1",
-        "medicines": [
-          {"name": "Medicine 1"},
-          {"name": "Medicine 2"},
-          {"name": "Medicine 3"},
-          {"name": "Medicine 4"},
-          {"name": "Medicine 5"},
-          {"name": "Medicine 6"},
-          {"name": "Medicine 7"},
-          {"name": "Medicine 8"},
-          {"name": "Medicine 9"},
-          {"name": "Medicine 10"},
-          {"name": "Medicine 11"},
-          {"name": "Medicine 12"},
-          {"name": "Medicine 13"},
-          {"name": "Medicine 14"},
-          {"name": "Medicine 15"},
-          {"name": "Medicine 16"},
-          {"name": "Medicine 17"},
-          {"name": "Medicine 18"},
-          {"name": "Medicine 19"},
-          {"name": "Medicine 20"}
-        ]
-      },
-      {
-        "name": "Pharmacy 2",
-        "medicines": [
-          {"name": "Medicine 21"},
-          {"name": "Medicine 22"},
-          {"name": "Medicine 23"},
-          {"name": "Medicine 24"},
-          {"name": "Medicine 25"},
-          {"name": "Medicine 26"},
-          {"name": "Medicine 27"},
-          {"name": "Medicine 28"},
-          {"name": "Medicine 29"},
-          {"name": "Medicine 30"},
-          {"name": "Medicine 31"},
-          {"name": "Medicine 32"},
-          {"name": "Medicine 33"},
-          {"name": "Medicine 34"},
-          {"name": "Medicine 35"},
-          {"name": "Medicine 36"},
-          {"name": "Medicine 37"},
-          {"name": "Medicine 38"},
-          {"name": "Medicine 39"},
-          {"name": "Medicine 40"}
-        ]
-      },
-      {
-        "name": "Pharmacy 3",
-        "medicines": [
-          {"name": "Medicine 41"},
-          {"name": "Medicine 42"},
-          {"name": "Medicine 43"},
-          {"name": "Medicine 44"},
-          {"name": "Medicine 45"},
-          {"name": "Medicine 46"},
-          {"name": "Medicine 47"},
-          {"name": "Medicine 48"},
-          {"name": "Medicine 49"},
-          {"name": "Medicine 50"},
-          {"name": "Medicine 51"},
-          {"name": "Medicine 52"},
-          {"name": "Medicine 53"},
-          {"name": "Medicine 54"},
-          {"name": "Medicine 55"},
-          {"name": "Medicine 56"},
-          {"name": "Medicine 57"},
-          {"name": "Medicine 58"},
-          {"name": "Medicine 59"},
-          {"name": "Medicine 60"}
-        ]
-      },
-      {
-        "name": "Pharmacy 4",
-        "medicines": [
-          {"name": "Medicine 61"},
-          {"name": "Medicine 62"},
-          {"name": "Medicine 63"},
-          {"name": "Medicine 64"},
-          {"name": "Medicine 65"},
-          {"name": "Medicine 66"},
-          {"name": "Medicine 67"},
-          {"name": "Medicine 68"},
-          {"name": "Medicine 69"},
-          {"name": "Medicine 70"},
-          {"name": "Medicine 71"},
-          {"name": "Medicine 72"},
-          {"name": "Medicine 73"},
-          {"name": "Medicine 74"},
-          {"name": "Medicine 75"},
-          {"name": "Medicine 76"},
-          {"name": "Medicine 77"},
-          {"name": "Medicine 78"},
-          {"name": "Medicine 79"},
-          {"name": "Medicine 80"}
-        ]
-      },
-      {
-        "name": "Pharmacy 5",
-        "medicines": [
-          {"name": "Medicine 81"},
-          {"name": "Medicine 82"},
-          {"name": "Medicine 83"},
-          {"name": "Medicine 84"},
-          {"name": "Medicine 85"},
-          {"name": "Medicine 86"},
-          {"name": "Medicine 87"},
-          {"name": "Medicine 88"},
-          {"name": "Medicine 89"},
-          {"name": "Medicine 90"},
-          {"name": "Medicine 91"},
-          {"name": "Medicine 92"},
-          {"name": "Medicine 93"},
-          {"name": "Medicine 94"},
-          {"name": "Medicine 95"},
-          {"name": "Medicine 96"},
-          {"name": "Medicine 97"},
-          {"name": "Medicine 98"},
-          {"name": "Medicine 99"},
-          {"name": "Medicine 100"}
-        ]
-      }
-    ]
-  }
-  
+  "id": 2,
+  "name": "Wellness Pharmacy",
+  "address": {
+    "street": "456 High Street",
+    "city": "London",
+    "postcode": "SW1B 2AB"
+  },
+  "medicines": [
+    {
+      "id": 21,
+      "name": "Cough Syrup",
+      "price": 7.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 22,
+      "name": "Vitamin C",
+      "price": 8.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 23,
+      "name": "Fish Oil",
+      "price": 9.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 24,
+      "name": "Probiotics",
+      "price": 10.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 25,
+      "name": "Calcium Supplements",
+      "price": 11.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 26,
+      "name": "Vitamin D",
+      "price": 12.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 27,
+      "name": "Iron Supplements",
+      "price": 13.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 28,
+      "name": "Magnesium Supplements",
+      "price": 14.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 29,
+      "name": "Omega-3 Fatty Acids",
+      "price": 15.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 30,
+      "name": "Melatonin",
+      "price": 16.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 31,
+      "name": "Ginseng",
+      "price": 17.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 32,
+      "name": "Echinacea",
+      "price": 18.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 33,
+      "name": "Garlic Supplements",
+      "price": 19.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 34,
+      "name": "Valerian Root",
+      "price": 20.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 35,
+      "name": "Ginkgo Biloba",
+      "price": 21.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 36,
+      "name": "St. John's Wort",
+      "price": 22.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 37,
+      "name": "Turmeric",
+      "price": 23.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 38,
+      "name": "Aloe Vera Juice",
+      "price": 24.49,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 39,
+      "name": "Green Tea Extract",
+      "price": 25.99,
+      "dateAdded": "2024-03-15"
+    },
+    {
+      "id": 40,
+      "name": "Glucosamine",
+      "price": 26.49,
+      "dateAdded": "2024-03-15"
+    }
+  ]
+},
+{
+  "id": 3,
+  "name": "QuickCare Pharmacy",
+  "address": {
+    "street": "789 Main Street",
+    "city": "London",
+    "postcode": "SE1 1AB"
+  },
+  "medicines": [
+    {
+      "id": 41,
+      "name": "Band-Aids",
+      "price": 5.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 42,
+      "name": "Hydrogen Peroxide",
+      "price": 3.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 43,
+      "name": "Antibiotic Ointment",
+      "price": 7.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 44,
+      "name": "Burn Cream",
+      "price": 6.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 45,
+      "name": "Alcohol Wipes",
+      "price": 4.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 46,
+      "name": "Hand Sanitizer",
+      "price": 8.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 47,
+      "name": "Cotton Swabs",
+      "price": 2.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 48,
+      "name": "Medical Tape",
+      "price": 3.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 49,
+      "name": "Disposable Gloves",
+      "price": 9.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 50,
+      "name": "Thermometer",
+      "price": 12.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 51,
+      "name": "Hot/Cold Packs",
+      "price": 6.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 52,
+      "name": "Nasal Spray",
+      "price": 7.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 53,
+      "name": "Saline Solution",
+      "price": 5.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 54,
+      "name": "Eye Drops",
+      "price": 8.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 55,
+      "name": "Ear Drops",
+      "price": 7.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 56,
+      "name": "Insect Repellent",
+      "price": 10.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 57,
+      "name": "Sunscreen",
+      "price": 11.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 58,
+      "name": "First Aid Kit",
+      "price": 24.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 59,
+      "name": "Medical Brace",
+      "price": 16.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 60,
+      "name": "Emergency Blanket",
+      "price": 19.99,
+      "date_added": "2024-03-02"
+    }
+  ]
+},
+
+{
+  "id": 4,
+  "name": "Good Health Pharmacy",
+  "address": {
+    "street": "789 Main Street",
+    "city": "New York",
+    "postcode": "10001"
+  },
+  "medicines": [
+    {
+      "id": 61,
+      "name": "Allergy Medicine",
+      "price": 15.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 62,
+      "name": "Nasal Decongestant",
+      "price": 12.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 63,
+      "name": "Cough Drops",
+      "price": 8.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 64,
+      "name": "Sore Throat Spray",
+      "price": 10.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 65,
+      "name": "Mouthwash",
+      "price": 7.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 66,
+      "name": "Antacid",
+      "price": 9.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 67,
+      "name": "Laxative",
+      "price": 11.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 68,
+      "name": "Antidiarrheal",
+      "price": 10.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 69,
+      "name": "Hemorrhoid Cream",
+      "price": 14.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 70,
+      "name": "Motion Sickness Medicine",
+      "price": 13.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 71,
+      "name": "Diaper Rash Cream",
+      "price": 8.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 72,
+      "name": "Anti-Itch Cream",
+      "price": 9.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 73,
+      "name": "Anti-Fungal Cream",
+      "price": 12.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 74,
+      "name": "Wart Remover",
+      "price": 7.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 75,
+      "name": "Nail Fungus Treatment",
+      "price": 16.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 76,
+      "name": "Hair Loss Treatment",
+      "price": 21.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 77,
+      "name": "Acne Treatment",
+      "price": 18.49,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 78,
+      "name": "Wrinkle Cream",
+      "price": 24.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 79,
+      "name": "Scar Treatment",
+      "price": 17.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 80,
+      "name": "Sunburn Relief",
+      "price": 11.49,
+      "date_added": "2024-03-02"
+    }
+  ]
+},
+{
+  "id": 5,
+  "name": "Prime Pharmacy",
+  "address": {
+    "street": "123 Oak Street",
+    "city": "New York",
+    "postcode": "10001"
+  },
+  "medicines": [
+    {
+      "id": 81,
+      "name": "Prescription 1",
+      "price": 49.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 82,
+      "name": "Prescription 2",
+      "price": 59.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 83,
+      "name": "Prescription 3",
+      "price": 39.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 84,
+      "name": "Prescription 4",
+      "price": 69.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 85,
+      "name": "Prescription 5",
+      "price": 79.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 86,
+      "name": "Prescription 6",
+      "price": 89.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 87,
+      "name": "Prescription 7",
+      "price": 99.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 88,
+      "name": "Prescription 8",
+      "price": 109.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 89,
+      "name": "Prescription 9",
+      "price": 119.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 90,
+      "name": "Prescription 10",
+      "price": 129.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 91,
+      "name": "Prescription 11",
+      "price": 139.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 92,
+      "name": "Prescription 12",
+      "price": 149.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 93,
+      "name": "Prescription 13",
+      "price": 159.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 94,
+      "name": "Prescription 14",
+      "price": 169.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 95,
+      "name": "Prescription 15",
+      "price": 179.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 96,
+      "name": "Prescription 16",
+      "price": 189.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 97,
+      "name": "Prescription 17",
+      "price": 199.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 98,
+      "name": "Prescription 18",
+      "price": 209.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 99,
+      "name": "Prescription 19",
+      "price": 219.99,
+      "date_added": "2024-03-02"
+    },
+    {
+      "id": 100,
+      "name": "Prescription 20",
+      "price": 229.99,
+      "date_added": "2024-03-02"
+    }
+  ]
+}
+]
+

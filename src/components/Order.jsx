@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 const Order = ({cart}) => {
-    const [checkedItems, setCheckedItems] = useState([cart])
+    // const [checkedItems, setCheckedItems] = useState([cart])
     const [formData, setFormData] = useState({
         name: null,
         phone: null,
