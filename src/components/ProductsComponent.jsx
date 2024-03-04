@@ -52,7 +52,7 @@ const Products = ({ medicines, onClick, onAddToFavorites, favorites }) => {
               {isFavorite(product.id) ? <IconActive /> : <IconNormal />}
             </button>
 
-            <img src={defaultImg} alt="defImg" style={ width: '140px' } />
+            <img src={defaultImg} alt="defImg" style={{ width: '140px' }} />
             <p>{product.price}</p>
             <button onClick={() => onClick(product.id)}>add to cart</button>
           </li>
