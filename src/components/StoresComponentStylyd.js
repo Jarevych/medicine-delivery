@@ -4,19 +4,29 @@ export const StoresStyled = styled.div`
   /* max-width: 1440px; */
   /* margin: 0 auto; */
   display: flex;
-  border: 1px solid black;
+  background-color: #f5ebff;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid black; */
 
   ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+    margin: 0;
   }
   li {
     list-style: none;
-    max-width: 200px;
+    /* max-width: 200px; */
     padding: 15px;
     cursor: pointer;
+    border-radius: 8px;
+    background-color: #c8b8e8;
+;
   }
   button {
     display: flex;

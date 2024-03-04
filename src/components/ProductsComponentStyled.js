@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const ProductsStyled = styled.div`
- max-width: 1000px;
+ max-width: 100%;
 
   /* margin: 0 auto; */
     display: flex;
@@ -13,6 +13,7 @@ export const ProductsStyled = styled.div`
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        justify-content: space-between;
     }
     li {
         list-style: none;

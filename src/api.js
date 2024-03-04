@@ -1,10 +1,10 @@
 import axios from 'axios'
 
 //development URL
-// const BASE_URL = 'http://localhost:3001/api'    
+const BASE_URL = 'http://localhost:3001/api'    
 
 // production URL
-const BASE_URL = 'https://medicine-delivery-back.onrender.com'
+// const BASE_URL = 'https://medicine-delivery-back.onrender.com'
 
 
 export async function fetchStores() {

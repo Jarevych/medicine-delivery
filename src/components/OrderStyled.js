@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 export const OrderStyled = styled.div`
-  /* max-width: 1440px;
-  margin: 0 auto; */
+  max-width: 100%; 
+ 
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   gap: 50px;
+  background-color: #f5ebff;
+  border-radius: 12px;
+  padding: 20px;
   /* max-width: 1000px; */
   .form {
     display: flex;
@@ -15,11 +18,14 @@ export const OrderStyled = styled.div`
     /* width: 400px; */
   }
   .input {
-    width: 250px;
+    width: 300px;
     height: 30px;
     border-radius: 8px;
     font-size: 18px;
     line-height: 1.2;
+    border: none;
+    background-color: #c8b8e8;
+    padding: 5px;
   }
   ul {
         display: flex;

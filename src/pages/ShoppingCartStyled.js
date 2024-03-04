@@ -3,18 +3,29 @@ import styled from 'styled-components';
 
 export const ShoppingStyledContainer = styled.div`
  max-width: 1440px;
+ margin: 0 auto;
+   display: flex;
+ justify-content: center;
 
-  margin: 0 auto;
-    display: flex;
+
+    /* gap: 50px; */
     /* flex-direction: column; */
     /* align-items: center; */
-
+    .list {
+      max-width: 100%;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
     ul {
+      
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         margin: 0 auto;
-        justify-content: space-between;
+        padding-left: 20px;
+        margin-left: 40px;
+        justify-content: stretch;
     }
     li {
         list-style: none;

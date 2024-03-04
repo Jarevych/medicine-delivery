@@ -39,6 +39,7 @@ const ShoppingCart = ({ added }) => {
   return (
     <ShoppingStyledContainer>
       <Order cart={cart}/>
+      <div className='list'>
       <ul>
         {cart.map(product => (
           <li key={product.id}>
@@ -54,6 +55,7 @@ const ShoppingCart = ({ added }) => {
           </li>
         ))}
       </ul>
+      </div>
     </ShoppingStyledContainer>
   );
 };
