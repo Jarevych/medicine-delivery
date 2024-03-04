@@ -7,9 +7,27 @@ export const HeaderStyled = styled.div`
     display: flex;
    justify-content: center;
    gap: 50px;
+   padding: 20px;
+   background-color: bisque;
+   border-bottom-right-radius: 12px;
+   border-bottom-left-radius: 12px;
+   margin-bottom: 20px;
 a {
     text-decoration: none;
     display: flex;
+    font-size: 24px;
+    color: #518ffe;
+    font-weight: 700;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+a:focus {
+    text-decoration: underline;
+}
+a is-active {
+    text-decoration: underline;
 }
 
     /* ul {

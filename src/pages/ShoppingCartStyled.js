@@ -13,6 +13,8 @@ export const ShoppingStyledContainer = styled.div`
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        margin: 0 auto;
+        justify-content: space-between;
     }
     li {
         list-style: none;
