@@ -25,14 +25,12 @@ const HomePage = () => {
   const getAllStores = async () => {
     try {
       const data = await fetchStores();
-      console.log(data);
       const stores = data.map(pharmacy => ({
         id: pharmacy.id,
         name: pharmacy.name,
         medicines: pharmacy.medicines,
       }));
       setStoreList(stores);
-      console.log(stores);
       if (stores.length > 0) {
         setSelectedStore(stores[0]); // Встановлення обраного магазину за замовчуванням
         setProductList(stores[0].medicines); // Встановлення списку продуктів для обраного магазину
@@ -42,7 +40,6 @@ const HomePage = () => {
     //   setSelectedStore(stores[0]);
     } catch (error) {}
   };
-  console.log(productList);
 
   useEffect(() => {
     getAllStores();
@@ -52,7 +49,6 @@ const HomePage = () => {
     const selected = storeList.find(store => store.id === storeId);
     if (selected) {
       setSelectedStore(selected);
-      console.log(selected);
       setProductList(selected.medicines);
     }
   };
@@ -90,7 +86,6 @@ const HomePage = () => {
     }
   };
 
-  console.log(added);
   return (
     <StyledContainer>
       <Stores stores={storeList} onSelect={HandleStoreSelect} />

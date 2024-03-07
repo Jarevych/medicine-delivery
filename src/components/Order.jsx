@@ -1,23 +1,19 @@
 import { addOrderHandler } from 'api';
 import { OrderStyled } from './OrderStyled';
 import React, { useState } from 'react';
-
+import MapComponent from './MapComponent';
 const Order = ({ cart }) => {
   // const [checkedItems, setCheckedItems] = useState([cart])
   const [formData, setFormData] = useState({
-    name: null,
-    phone: null,
-    email: null,
-    address: null,
-    drags: null,
+    name: '',
+    phone: '',
+    email: '',
+    address: '',
+    drags: [],
   });
-
-  console.log(cart);
-  // const orederedItems = localStorage.getItem(JSON.parse 'cart');
 
   const handleChange = e => {
     const { name, value } = e.target;
-    console.log(name, value);
     setFormData(prevData => ({
       ...prevData,
       [name]: value,
@@ -26,7 +22,6 @@ const Order = ({ cart }) => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    console.log(formData);
     setFormData({
       name: '',
       phone: '',
@@ -39,8 +34,10 @@ const Order = ({ cart }) => {
 
   return (
     <OrderStyled>
+                <MapComponent />
+
       <form className="form" onSubmit={handleSubmit}>
-        <div>
+        <div className='input-form'>
           <label htmlFor="name">Name:</label>
           <input
             className="input"
@@ -52,7 +49,7 @@ const Order = ({ cart }) => {
             required
           />
         </div>
-        <div>
+        <div className='input-form'>
           <label htmlFor="phone">Phone:</label>
           <input
             className="input"
@@ -64,7 +61,7 @@ const Order = ({ cart }) => {
             required
           />
         </div>
-        <div>
+        <div className='input-form'>
           <label htmlFor="email">E-mail:</label>
           <input
             className="input"
@@ -76,7 +73,7 @@ const Order = ({ cart }) => {
             required
           />
         </div>
-        <div>
+        <div className='input-form'>
           <label htmlFor="address">Address:</label>
           <textarea
             className="input"

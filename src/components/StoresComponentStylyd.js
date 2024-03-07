@@ -4,7 +4,7 @@ export const StoresStyled = styled.div`
   /* max-width: 1440px; */
   /* margin: 0 auto; */
   display: flex;
-  background-color: #f5ebff;
+  background-color: #9effb1;
   border-radius: 12px;
   padding: 20px;
   height: 100%;
@@ -25,7 +25,10 @@ export const StoresStyled = styled.div`
     padding: 15px;
     cursor: pointer;
     border-radius: 8px;
-    background-color: #c8b8e8;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3470ff;
+    /* background-color: #c8b8e8; */
 ;
   }
   button {

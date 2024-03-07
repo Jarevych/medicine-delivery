@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const OrderStyled = styled.div`
-  max-width: 100%; 
+  max-width: 350px; 
  
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 50px;
-  background-color: #f5ebff;
+  background-color: #9effb1;
   border-radius: 12px;
   padding: 20px;
   /* max-width: 1000px; */
@@ -15,7 +17,7 @@ export const OrderStyled = styled.div`
     flex-direction: column;
     gap: 20px;
     align-items: start;
-    /* width: 400px; */
+    color: #3470ff;
   }
   .input {
     width: 300px;
@@ -24,8 +26,11 @@ export const OrderStyled = styled.div`
     font-size: 18px;
     line-height: 1.2;
     border: none;
-    background-color: #c8b8e8;
+    background-color: #dfffe3;
     padding: 5px;
+  }
+  .input-form {
+    width: 310px;
   }
   ul {
         display: flex;

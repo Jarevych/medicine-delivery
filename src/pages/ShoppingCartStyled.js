@@ -6,14 +6,14 @@ export const ShoppingStyledContainer = styled.div`
  margin: 0 auto;
    display: flex;
  justify-content: center;
-
+ /* position: relative; */
 
     /* gap: 50px; */
     /* flex-direction: column; */
     /* align-items: center; */
     .list {
-      max-width: 100%;
-      display: flex;
+      /* max-width: 100%; */
+      /* display: flex; */
       padding: 0;
       margin: 0;
     }
@@ -21,17 +21,34 @@ export const ShoppingStyledContainer = styled.div`
       
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
         margin: 0 auto;
         padding-left: 20px;
         margin-left: 40px;
         justify-content: stretch;
     }
     li {
+      color: #3470ff;
+
         list-style: none;
-       width: 200px;
+        /* height: 200px; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      /* align-items: center; */
+       /* width: 150px; */
         padding: 15px;
         position: relative;
+        border: 2px solid #aaef9f;
+        border-radius: 8px;
+    }
+    .price {
+      display: flex;
+      justify-content: space-between;
+    }
+    .quantity {
+      max-width: 30px;
+      text-align: center;
     }
     button {
         display: flex;
@@ -55,4 +72,10 @@ export const ShoppingStyledContainer = styled.div`
   background-color: transparent;
   border: 0;
   }
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
 `

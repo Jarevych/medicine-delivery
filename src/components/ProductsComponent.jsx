@@ -49,7 +49,7 @@ const Products = ({ medicines, onClick, onAddToFavorites, favorites }) => {
               className="favor"
               onClick={() => onAddToFavorites(product)}
             >
-              {isFavorite(product.id) ? <IconActive /> : <IconNormal />}
+              {isFavorite(product.id) ? <IconActive /> : <IconNormal className='icon'/>}
             </button>
 
             <img src={defaultImg} alt="defImg" style={{ width: '140px' }} />

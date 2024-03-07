@@ -8,7 +8,7 @@ export const HeaderStyled = styled.div`
    justify-content: center;
    gap: 50px;
    padding: 20px;
-   background-color: bisque;
+   background-color: #06da61;
    border-bottom-right-radius: 12px;
    border-bottom-left-radius: 12px;
    margin-bottom: 20px;
@@ -16,7 +16,7 @@ a {
     text-decoration: none;
     display: flex;
     font-size: 24px;
-    color: #518ffe;
+    color: #FFF;
     font-weight: 700;
 
 }

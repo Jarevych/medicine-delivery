@@ -38,9 +38,10 @@ export const ProductsStyled = styled.div`
     }
     .favor {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 23px;
+  right: 135px;
   background-color: transparent;
+  fill: #000;
   border: 0;
   }
-`
+  `
