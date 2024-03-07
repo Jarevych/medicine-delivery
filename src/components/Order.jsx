@@ -34,10 +34,10 @@ const Order = ({ cart }) => {
 
   return (
     <OrderStyled>
-                <MapComponent />
+      <MapComponent />
 
       <form className="form" onSubmit={handleSubmit}>
-        <div className='input-form'>
+        <div className="input-form">
           <label htmlFor="name">Name:</label>
           <input
             className="input"
@@ -49,7 +49,7 @@ const Order = ({ cart }) => {
             required
           />
         </div>
-        <div className='input-form'>
+        <div className="input-form">
           <label htmlFor="phone">Phone:</label>
           <input
             className="input"
@@ -61,7 +61,7 @@ const Order = ({ cart }) => {
             required
           />
         </div>
-        <div className='input-form'>
+        <div className="input-form">
           <label htmlFor="email">E-mail:</label>
           <input
             className="input"
@@ -73,7 +73,7 @@ const Order = ({ cart }) => {
             required
           />
         </div>
-        <div className='input-form'>
+        <div className="input-form">
           <label htmlFor="address">Address:</label>
           <textarea
             className="input"

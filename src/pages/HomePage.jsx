@@ -35,9 +35,9 @@ const HomePage = () => {
         setSelectedStore(stores[0]); // Встановлення обраного магазину за замовчуванням
         setProductList(stores[0].medicines); // Встановлення списку продуктів для обраного магазину
       }
-    //   const products = data.medicines;
-    //   setProductList(products);
-    //   setSelectedStore(stores[0]);
+      //   const products = data.medicines;
+      //   setProductList(products);
+      //   setSelectedStore(stores[0]);
     } catch (error) {}
   };
 
@@ -77,12 +77,9 @@ const HomePage = () => {
       setFavorites(updateFavorites);
       localStorage.setItem('favorites', JSON.stringify(updateFavorites));
     } else {
-        const updateFavorites = [...favorites, product]
+      const updateFavorites = [...favorites, product];
       setFavorites(updateFavorites);
-      localStorage.setItem(
-        'favorites',
-        JSON.stringify(updateFavorites)
-      );
+      localStorage.setItem('favorites', JSON.stringify(updateFavorites));
     }
   };
 

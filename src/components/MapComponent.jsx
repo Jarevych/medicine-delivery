@@ -1,11 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import {
-  GoogleMap,
-  Marker,
-  useJsApiLoader,
-} from '@react-google-maps/api';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import { MapsStyled } from './MapComponentStyled';
-// import { position } from 'stylis';
 
 const mapStyles = {
   width: '310px',
@@ -38,11 +33,14 @@ function MapComponent() {
     }
   }, []);
 
-  const onLoad = useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(myPosition);
-    map.fitBounds(bounds);
-    setMap(map);
-  }, [myPosition]);
+  const onLoad = useCallback(
+    function callback(map) {
+      const bounds = new window.google.maps.LatLngBounds(myPosition);
+      map.fitBounds(bounds);
+      setMap(map);
+    },
+    [myPosition]
+  );
 
   const onUnmount = useCallback(function callback(map) {
     setMap(null);
@@ -50,18 +48,19 @@ function MapComponent() {
 
   return isLoaded ? (
     <MapsStyled>
-    <GoogleMap
-      mapContainerStyle={mapStyles}
-      zoom={1}
-      onLoad={onLoad}
-      onUnmount={onUnmount}
-      center={myPosition}
+      <GoogleMap
+        mapContainerStyle={mapStyles}
+        zoom={1}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+        center={myPosition}
       >
-        <Marker position={myPosition}/>
-
+        <Marker position={myPosition} />
       </GoogleMap>
-      </MapsStyled>
-  ) : <></>;
+    </MapsStyled>
+  ) : (
+    <></>
+  );
 }
 
 export default MapComponent;

@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-// import { useLocation } from 'react-router-dom';
 import { ShoppingStyledContainer } from './ShoppingCartStyled';
 import Order from 'components/Order';
-import MapComponent from 'components/MapComponent';
 
 const ShoppingCart = ({ added }) => {
-  // console.log(products)
   const [cart, setCart] = useState([]);
   const defaultImg =
     'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Medicine_Drugs.svg/2560px-Medicine_Drugs.svg.png';
@@ -40,36 +37,29 @@ const ShoppingCart = ({ added }) => {
     <div>
       <ShoppingStyledContainer>
         <div className="left-side">
-
           <Order cart={cart} />
-          </div>
-          <div className="list">
-            <ul>
-              {cart.map(product => (
-                <li key={product.id}>
-                  <p>{product.name}</p>
-                  <img
-                    src={defaultImg}
-                    alt="defImg"
-                    style={{ width: '140px' }}
-                  />
-                  <div className='price'>
-
+        </div>
+        <div className="list">
+          <ul>
+            {cart.map(product => (
+              <li key={product.id}>
+                <p>{product.name}</p>
+                <img src={defaultImg} alt="defImg" style={{ width: '140px' }} />
+                <div className="price">
                   <p>{product.price}</p>
                   <input
-                    className='quantity'
+                    className="quantity"
                     type="number"
                     value={product.quantity || 1}
                     onChange={e =>
                       handleQuantityChange(product.id, e.target.value)
                     }
                   />
-                  </div>
-                  <button onClick={() => deleteItem(product.id)}>delete</button>
-                </li>
-              ))}
-            </ul>
-         
+                </div>
+                <button onClick={() => deleteItem(product.id)}>delete</button>
+              </li>
+            ))}
+          </ul>
         </div>
       </ShoppingStyledContainer>
     </div>

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const OrderStyled = styled.div`
-  max-width: 350px; 
- 
+  max-width: 350px;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -33,17 +33,17 @@ export const OrderStyled = styled.div`
     width: 310px;
   }
   ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    li {
-        list-style: none;
-       width: 200px;
-        padding: 15px;
-        position: relative;
-    }
-   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  li {
+    list-style: none;
+    width: 200px;
+    padding: 15px;
+    position: relative;
+  }
+
   button {
     display: flex;
     margin: 5px;
@@ -59,14 +59,12 @@ export const OrderStyled = styled.div`
     line-height: 1.42;
     color: #fff;
   }
-  
 
-   
-    .favor {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background-color: transparent;
-  border: 0;
+  .favor {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-color: transparent;
+    border: 0;
   }
 `;
