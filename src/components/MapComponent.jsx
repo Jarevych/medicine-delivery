@@ -41,6 +41,7 @@ function MapComponent() {
     },
     [myPosition]
   );
+  console.log(map)
 
   const onUnmount = useCallback(function callback(map) {
     setMap(null);
