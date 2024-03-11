@@ -15,21 +15,28 @@ function MapComponent() {
   const [myPosition, setMyPosition] = useState(null);
   const [map, setMap] = useState(null);
   const [pharmacyStores, setPharmacyStores] = useState([]);
+  const london = {
+    lat: 51.516624,
+    lng: -0.130254,
+  };
+  const center = myPosition ?? london;
 
   const handleSelectStore = () => {
-    const getStoresString = localStorage.getItem('cart')
-    const getStores = JSON.parse(getStoresString)
-    console.table(getStores)
-const pharmacyStores = getStores.filter(store => store.pharmacy !== null && store.pharmacy !== undefined);
-pharmacyStores.forEach(store => {
-  if (store.pharmacy.address) {
-    store.pharmacy.address.lat = parseFloat(store.pharmacy.address.lat);
-    store.pharmacy.address.lng = parseFloat(store.pharmacy.address.lng);
-  }
-});
+    const getStoresString = localStorage.getItem('cart');
+    const getStores = JSON.parse(getStoresString);
+    console.table(getStores);
+    const pharmacyStores = getStores.filter(
+      store => store.pharmacy !== null && store.pharmacy !== undefined
+    );
+    pharmacyStores.forEach(store => {
+      if (store.pharmacy.address) {
+        store.pharmacy.address.lat = parseFloat(store.pharmacy.address.lat);
+        store.pharmacy.address.lng = parseFloat(store.pharmacy.address.lng);
+      }
+    });
 
-setPharmacyStores(pharmacyStores);
-  }
+    setPharmacyStores(pharmacyStores);
+  };
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -44,7 +51,7 @@ setPharmacyStores(pharmacyStores);
           console.error('could not get geolocation', error);
         }
       );
-      handleSelectStore()
+      handleSelectStore();
     } else {
       console.error('geolocation is not supported');
     }
@@ -52,11 +59,11 @@ setPharmacyStores(pharmacyStores);
 
   const onLoad = useCallback(
     function callback(map) {
-      const bounds = new window.google.maps.LatLngBounds(myPosition);
+      const bounds = new window.google.maps.LatLngBounds(center);
       map.fitBounds(bounds);
       setMap(map);
     },
-    [myPosition]
+    [center]
   );
 
   const onUnmount = useCallback(function callback(map) {
@@ -67,14 +74,28 @@ setPharmacyStores(pharmacyStores);
     <MapsStyled>
       <GoogleMap
         mapContainerStyle={mapStyles}
-        zoom={1}
+        zoom={8}
         onLoad={onLoad}
         onUnmount={onUnmount}
-        center={myPosition}
+        center={center}
       >
-        <Marker position={myPosition} />
+        <Marker
+          position={myPosition}
+          label="I'm here"
+          icon={{
+            url: '../assets/position.png', 
+            scaledSize: new window.google.maps.Size(10, 10), // розмір іконки
+          }}
+        />
         {pharmacyStores.map(store => (
-          <Marker key={store.id} position={{ lat: store.pharmacy.address.lat, lng: store.pharmacy.address.lng }} />
+          <Marker
+            key={store.id}
+            position={{
+              lat: store.pharmacy.address.lat,
+              lng: store.pharmacy.address.lng,
+            }}
+            label="Pharmacie"
+          />
         ))}
       </GoogleMap>
     </MapsStyled>
