@@ -80,11 +80,11 @@ function MapComponent() {
         center={center}
       >
         <Marker
-          position={myPosition}
+          position={center}
           label="I'm here"
           icon={{
             url: '../assets/position.png', 
-            scaledSize: new window.google.maps.Size(10, 10), // розмір іконки
+            scaledSize: new window.google.maps.Size(30, 30), // розмір іконки
           }}
         />
         {pharmacyStores.map(store => (
