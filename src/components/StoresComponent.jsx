@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { StoresStyled } from './StoresComponentStylyd';
 
 const Stores = ({ stores, onSelect }) => {
