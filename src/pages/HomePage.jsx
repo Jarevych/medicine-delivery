@@ -28,9 +28,11 @@ const HomePage = () => {
       const stores = data.map(pharmacy => ({
         id: pharmacy.id,
         name: pharmacy.name,
+        address: pharmacy.address,
         medicines: pharmacy.medicines,
       }));
       setStoreList(stores);
+      console.log(stores)
       if (stores.length > 0) {
         setSelectedStore(stores[0]); // Встановлення обраного магазину за замовчуванням
         setProductList(stores[0].medicines); // Встановлення списку продуктів для обраного магазину
@@ -60,7 +62,7 @@ const HomePage = () => {
     if (selectedStore) {
       const productWithStore = {
         ...selectedProduct,
-        pharmacy: { name: selectedStore.name, id: selectedStore.id },
+        pharmacy: { name: selectedStore.name, id: selectedStore.id, address: selectedStore.address},
       };
       setAdded(prevAdded => [...prevAdded, productWithStore]);
       localStorage.setItem(
@@ -85,7 +87,7 @@ const HomePage = () => {
 
   return (
     <StyledContainer>
-      <Stores stores={storeList} onSelect={HandleStoreSelect} />
+      <Stores stores={storeList} onSelect={HandleStoreSelect}/>
       {selectedStore && (
         <Products
           medicines={productList}

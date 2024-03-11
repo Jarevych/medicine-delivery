@@ -2,6 +2,7 @@ import { addOrderHandler } from 'api';
 import { OrderStyled } from './OrderStyled';
 import React, { useState } from 'react';
 import MapComponent from './MapComponent';
+
 const Order = ({ cart }) => {
   // const [checkedItems, setCheckedItems] = useState([cart])
   const [formData, setFormData] = useState({

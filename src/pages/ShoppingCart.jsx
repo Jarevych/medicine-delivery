@@ -4,6 +4,9 @@ import { ShoppingStyledContainer } from './ShoppingCartStyled';
 import Order from 'components/Order';
 
 const ShoppingCart = ({ added }) => {
+  // const [storeList, setStoreList] = useState(stores)
+
+  // console.log(storeList)
   const [cart, setCart] = useState([]);
   const defaultImg =
     'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Medicine_Drugs.svg/2560px-Medicine_Drugs.svg.png';
@@ -37,7 +40,7 @@ const ShoppingCart = ({ added }) => {
     <div>
       <ShoppingStyledContainer>
         <div className="left-side">
-          <Order cart={cart} />
+          <Order cart={cart}/>
         </div>
         <div className="list">
           <ul>

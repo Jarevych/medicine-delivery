@@ -14,6 +14,22 @@ function MapComponent() {
   });
   const [myPosition, setMyPosition] = useState(null);
   const [map, setMap] = useState(null);
+  const [pharmacyStores, setPharmacyStores] = useState([]);
+
+  const handleSelectStore = () => {
+    const getStoresString = localStorage.getItem('cart')
+    const getStores = JSON.parse(getStoresString)
+    console.table(getStores)
+const pharmacyStores = getStores.filter(store => store.pharmacy !== null && store.pharmacy !== undefined);
+pharmacyStores.forEach(store => {
+  if (store.pharmacy.address) {
+    store.pharmacy.address.lat = parseFloat(store.pharmacy.address.lat);
+    store.pharmacy.address.lng = parseFloat(store.pharmacy.address.lng);
+  }
+});
+
+setPharmacyStores(pharmacyStores);
+  }
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -28,6 +44,7 @@ function MapComponent() {
           console.error('could not get geolocation', error);
         }
       );
+      handleSelectStore()
     } else {
       console.error('geolocation is not supported');
     }
@@ -41,7 +58,6 @@ function MapComponent() {
     },
     [myPosition]
   );
-  console.log(map)
 
   const onUnmount = useCallback(function callback(map) {
     setMap(null);
@@ -57,6 +73,9 @@ function MapComponent() {
         center={myPosition}
       >
         <Marker position={myPosition} />
+        {pharmacyStores.map(store => (
+          <Marker key={store.id} position={{ lat: store.pharmacy.address.lat, lng: store.pharmacy.address.lng }} />
+        ))}
       </GoogleMap>
     </MapsStyled>
   ) : (
