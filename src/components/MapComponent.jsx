@@ -20,7 +20,7 @@ function MapComponent() {
     lng: -0.130254,
   };
   const center = myPosition ?? london;
-
+console.log(map)
   const handleSelectStore = () => {
     const getStoresString = localStorage.getItem('cart');
     const getStores = JSON.parse(getStoresString);
